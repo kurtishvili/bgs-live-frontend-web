@@ -1,0 +1,18 @@
+.balance-wrapper {
+    display: flex;
+    padding: 11px 0px;
+
+    .amount {
+        color: white;
+        width: 80px;
+        background-color: #1f2021;
+        text-align: center;
+    }
+    .balance {
+        width: 150px;
+        color: #39a63f;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+}

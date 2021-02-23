@@ -1,0 +1,20 @@
+.promotion-wrapper {
+    display: flex;
+    .left-animation-wrapper {
+        flex: 1;
+        overflow: hidden;
+
+        video {
+            width: 100%;
+        }
+    }
+    .right-img-wrapper {
+        flex: 2;
+        overflow: hidden;
+        height: 256px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

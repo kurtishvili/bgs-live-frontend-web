@@ -1,0 +1,160 @@
+.content-wrapper {
+    .top-side {
+        position: relative;
+        .icons {
+            margin: 5px;
+            color: white;
+            font-size: 16px;
+            display: inline-block;
+            cursor: pointer;
+
+            i {
+                margin-left: 5px;
+                background-color: #141c24;
+                padding: 2px;
+            }
+        }
+        .balance {
+            color: white;
+            font-size: 16px;
+            padding: 2px;
+            background-color: #141c24;
+            margin: 5px;
+            display: inline-block;
+            right: 0;
+            position: absolute;
+
+            .green {
+                color: green;
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        .bet {
+            margin: 20px;
+            flex: 1;
+            .auto-cashout {
+                position: relative;
+
+                .label {
+                    display: inline-block;
+                    color: white;
+                }
+                .input {
+                    float: right;
+                    position: relative;
+
+                    label {
+                        position: absolute;
+                        color: yellow;
+                        top: 1px;
+                        left: 5px;
+                    }
+
+                    input {
+                        text-align: right;
+                        background-color: #80808054;
+                        outline: none;
+                        border: none;
+                        display: block;
+                        color: white;
+                        width: 150px;
+                        height: 25px;
+                        padding: 10px 10px 10px 50px;
+                    }
+                }
+            }
+            .my-bet {
+                margin-top: 20px;
+                position: relative;
+
+                .label {
+                    display: inline-block;
+                    color: white;
+                }
+                .input {
+                    float: right;
+                    position: relative;
+
+                    label {
+                        color: yellow;
+                        position: absolute;
+                        left: 5px;
+                        top: 1px;
+                    }
+
+                    input {
+                        text-align: right;
+                        background-color: #80808054;
+                        outline: none;
+                        border: none;
+                        display: block;
+                        color: white;
+                        width: 150px;
+                        height: 25px;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .bet-wrapper {
+                display: flex;
+                margin-top: 20px;
+                .bet-sizes {
+                    .first-row {
+                        margin-bottom: 5px;
+                        div {
+                            background-color: grey;
+                            display: inline-block;
+                            margin-right: 5px;
+                            padding: 2px;
+                            cursor: pointer;
+                            width: 30px;
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .second-row {
+                        div {
+                            background-color: grey;
+                            display: inline-block;
+                            margin-right: 5px;
+                            padding: 2px;
+                            cursor: pointer;
+                            width: 30px;
+                            text-align: center;
+                            margin-bottom: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                    .third-row {
+                        div {
+                            background-color: grey;
+                            padding: 2px;
+                            cursor: pointer;
+                            width: 65px;
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .bet-btn {
+                    flex: 1;
+
+                    div {
+                        background-color: green;
+                        padding: 5px;
+                        cursor: pointer;
+                        text-align: center;
+                        height: 71px;
+                        color: white;
+                        line-height: 58px;
+                    }
+                }
+            }
+        }
+    }
+}

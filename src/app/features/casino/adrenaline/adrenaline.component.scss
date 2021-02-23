@@ -1,0 +1,38 @@
+.main-container {
+    display: flex;
+    height: calc(100vh - 90px);
+
+    .left {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+
+        .my-bets,
+        .top-bps {
+            flex: 1;
+            margin: 5px;
+            overflow: auto;
+        }
+    }
+    .between {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .game {
+            flex: 1;
+            position: relative;
+            background-image: linear-gradient(#080808, #3b3e40, #080808);
+        }
+
+        .bet {
+            flex: 1;
+        }
+    }
+
+    .right {
+        width: 250px;
+        background-color: white;
+        height: calc(100vh - 100px);
+    }
+}

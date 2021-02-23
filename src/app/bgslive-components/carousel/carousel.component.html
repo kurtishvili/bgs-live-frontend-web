@@ -1,0 +1,23 @@
+<div class="carousel-container">
+
+    <div class="primary-slide-container">
+
+        <img src="{{ getCurrentSlide() }}">
+
+        <div class="slide-bullets-container">
+            <div class="slide-bullet" *ngFor="let slide of slides; let index = index;"
+                (click)="changePrimarySlide(index)">
+                <div class="active-slide-bullet" *ngIf="index == currentIndex"></div>
+            </div>
+        </div>
+
+        <div class="left-arrow">
+            <bgs-arrow direction="left" (click)='getPrev()'></bgs-arrow>
+        </div>
+
+        <div class="right-arrow">
+            <bgs-arrow direction="right" (click)='getNext()'></bgs-arrow>
+        </div>
+    </div>
+
+</div>

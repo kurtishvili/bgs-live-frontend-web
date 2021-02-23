@@ -1,0 +1,47 @@
+.transaction-container{
+
+
+
+.filter-container {
+    padding: 30px 50px;
+    .title-wrapper {
+        display: flex;
+        div {
+            flex: 1;
+            color: white;
+            font-size: 22px;
+        }
+    }
+    .inputs {
+        display: flex;
+
+        .input-field {
+            flex: 1;
+            padding: 15px 0px;
+        }
+    }
+    .checkbox-inputs-wrapper {
+        display: flex;
+        .checkbox-input {
+            flex: 1;
+
+            label {
+                color: white;
+                font-size: 18px;
+            }
+        }
+        .btn-wrapper {
+            button {
+                background: red;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                padding: 5px 20px;
+                color: white;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+}

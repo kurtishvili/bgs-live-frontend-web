@@ -1,0 +1,42 @@
+.game-wrapper {
+
+    .bps {
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+        font-weight: bold;
+        display: inline-block;
+
+        div{
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: top;
+        }
+    }
+
+    .logo {
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        font-weight: bold;
+        background-image: linear-gradient(to right, #b4b44f8f, #ffff60, #2fb42f);
+        padding: 5px 30px;
+        border-radius: 5px;
+        transform: translate(-50%, -50%);
+    }
+
+    .amount {
+        background-color: #9a9910;
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        transform: translateX(-50%);
+        font-weight: bold;
+        padding: 5px;
+    }
+}

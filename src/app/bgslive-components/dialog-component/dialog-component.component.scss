@@ -1,0 +1,40 @@
+.dialog-container {
+    position: absolute;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    padding: 10px 9px;
+    z-index: 1001;
+
+    .close-btn {
+        position: absolute;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        background: red;
+        color: white;
+        right: -5px;
+        top: -11px;
+        padding: 9px;
+    }
+
+    .content-wrapper {
+        max-width: calc(100vw - 400px);
+        max-height: calc(100vh - 200px);
+        min-width: 200px;
+        min-height: 200px;
+        overflow: hidden auto;
+        padding: 10px;
+    }
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000004d;
+    z-index: 1000;
+}

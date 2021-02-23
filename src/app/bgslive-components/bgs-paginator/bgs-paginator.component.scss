@@ -1,0 +1,38 @@
+.paginator-wrapper {
+    text-align: center;
+    padding: 5px 0;
+
+    *:not(:first-child) {
+        margin-left: 3px;
+    }
+
+    .paginator-button {
+        padding: 5px 10px;
+        background-color: #4d4d4d;
+        color: white;
+        cursor: pointer;
+        border: 1px solid grey;
+        vertical-align: middle;
+        height: 32px;
+
+        &:hover {
+            background-color: green;
+        }
+
+        .material-icons {
+            font-size: 16px;
+        }
+    }
+
+    .page-size-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .currentPageNumber {
+        background-color: #4d4d4d;
+        font-size: 27px;
+        vertical-align: middle;
+        color: white;
+    }
+}

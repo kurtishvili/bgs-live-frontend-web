@@ -1,0 +1,9 @@
+<div class="container" *ngIf="messages">
+
+    <div @slideIn @slideOut class="toast-container" *ngFor="let msg of messages; let index = index;"
+        [style.backgroundColor]="getColor(msg.severity)">
+        <div class="toast-severity"> {{msg.severity | localize}} </div>
+        <div class="toast-message"> {{msg.message | localize}} </div>
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="profile-wrapper" spellcheck="false" contentEditable="true" (blur)="showMenu = false;">
+    <div class="img-wrapper" (click)="profileClick()">
+        <img
+            src="https://cdn1.iconfinder.com/data/icons/ui-next-2020-shopping-and-e-commerce-1/12/75_user-circle-512.png">
+    </div>
+
+    <div class="menu" *ngIf="showMenu">
+        <a class="menu-item" routerLink="/user/transactions"> {{'transactions' | localize}}</a>
+        <a class="menu-item"> {{'inbox' | localize}} </a>
+        <a class="menu-item" routerLink="/user/edit"> {{'edit_profile' | localize}}</a>
+        <a class="menu-item" routerLink="/user/changePassword" > {{'change_password' | localize}} </a>
+        <div class="btn-sign-out" (click)="signOut()"> {{'sign_out' | localize }} </div>
+    </div>
+</div>

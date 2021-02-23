@@ -1,0 +1,30 @@
+<div class="roulette-wrapper">
+
+    <div class="wheel-wrapper">
+        <div class="arrow"></div>
+        <div class="roulette-wheel" [class.rotate]="rotating" [style.transform]="wheelTransition"> </div>
+
+        <button (click)="toggleMainBoard()">Show</button>
+        <button (click)="startSpin()">Start</button>
+        <button (click)="stopSpin()">Stop</button>
+
+        <div class="main-board-wrapper">
+            <div class="main-board" [class.visible]="showMainBoard">
+                <div class="row">
+                    <div class="slot" *ngFor="let slot of mainBoardSlotsFirstRow" [style.backgroundColor]="slot.color">
+                        <span class="text">{{slot.name}}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slot" *ngFor="let slot of mainBoardSlotsSecondRow" [style.backgroundColor]="slot.color">
+                        <span class="text">{{slot.name}}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slot" *ngFor="let slot of mainBoardSlotsThirdRow" [style.backgroundColor]="slot.color">
+                        <span class="text">{{slot.name}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

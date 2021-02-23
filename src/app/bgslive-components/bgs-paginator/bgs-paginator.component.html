@@ -1,0 +1,36 @@
+<div class="paginator-wrapper">
+
+    <button class="paginator-button" (click)="firstPageClick()">
+        <span class="material-icons">
+            keyboard_arrow_left
+        </span>
+        <span class="material-icons">
+            keyboard_arrow_left
+        </span>
+    </button>
+    <button class="paginator-button" (click)="previousPageClick()">
+        <span class="material-icons">
+            keyboard_arrow_left
+        </span>
+    </button>
+
+    <span class="currentPageNumber"> {{currentPageNumber+1}} </span>
+
+    <button class="paginator-button" (click)="nextPageClick()">
+        <span class="material-icons">
+            keyboard_arrow_right
+        </span>
+    </button>
+    <button class="paginator-button" (click)="lastPageClick()">
+        <span class="material-icons">
+            keyboard_arrow_right
+        </span>
+        <span class="material-icons">
+            keyboard_arrow_right
+        </span>
+    </button>
+
+    <div class="page-size-wrapper">
+        <bgs-dropdown [items]="options" [(ngModel)]="pageSize" (ngModelChange)="pageSizeOnChange()"></bgs-dropdown>
+    </div>
+</div>

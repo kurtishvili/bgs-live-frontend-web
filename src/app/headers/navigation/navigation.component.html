@@ -1,0 +1,73 @@
+<header class="header">
+
+    <a href="">
+        <img class="logo"
+            src="https://www.buildgrowscalelive.com/hosted/images/e9/3120b04fc611e88964b13c057c143c/BGS-Live-navbar-icon-no-date.png">
+    </a>
+
+
+    <nav class="main-menu">
+        <ul class="menu">
+            <li>
+                <a routerLink="/sport">{{ 'sport' | localize}} </a>
+            </li>
+            <li>
+                <a href=""> {{ 'live' | localize}} </a>
+            </li>
+            <li>
+                <a routerLink="/casino"> {{'casino' | localize}} </a>
+            </li>
+            <li>
+                <a routerLink="/slot"> {{ 'slots' | localize}}</a>
+            </li>
+            <li>
+                <a href=""> {{'promotions' | localize }}</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="right-menu">
+        <ng-container *ngIf="!isAuthenticated">
+            <form class="auth-form" action="">
+                <div class="input-wrapper">
+                    <bgs-input name="firstname" placeholder="{{'username' | localize}} " width="125px"
+                        [(ngModel)]="user.username"> </bgs-input>
+                </div>
+                <div class="input-wrapper">
+                    <bgs-input name="password" placeholder="{{'password' | localize}}" width="125px"
+                        [(ngModel)]="user.password"></bgs-input>
+                </div>
+
+                <button class="sign-btn" type="submit" (click)="singIn()"> {{'sign_in' | localize}} </button>
+            </form>
+
+
+            <button class="register-btn" (click)="registerClick()"> {{'register' | localize}} </button>
+        </ng-container>
+
+
+        <div class="sign-in-right-menu-wrapper" *ngIf="isAuthenticated">
+            <div>
+                <div class="pin-name-wrapper">
+                    <div class="pin">PIN {{authUser.pinCode}} /</div>
+                    <div class="name"> {{authUser.firstname}} </div>
+                </div>
+
+                <app-balance *ngIf="isAuthenticated"></app-balance>
+            </div>
+
+            <div class="account-circle">
+                <app-user-profile></app-user-profile>
+            </div>
+
+        </div>
+
+        <div class="language-wrapper">
+            <app-language></app-language>
+        </div>
+    </div>
+</header>
+
+<bgs-dialog [(visibility)]="showRegisterDialog" width="300px" background-color="#2b2e34">
+    <app-register></app-register>
+</bgs-dialog>

@@ -1,0 +1,78 @@
+<div class="title">
+    <span class="edit-profile"> {{"edit_profile" | localize}} </span>
+</div>
+
+<div class="container">
+
+
+    <div class="personal-information">
+
+
+        <div class="name">
+            <div class="firstname">
+                <label class="label" for="firstname"  > {{'firstname' | localize}} </label>
+                <div class="field">
+                    <bgs-input  [(ngModel)]="user.firstname"></bgs-input>
+                </div>
+            </div>
+
+            <div class="lastname">
+                <label class="label" for="lastname"> {{'lastname' | localize}} </label>
+                <div class="field">
+                    <bgs-input [(ngModel)]="user.lastname"></bgs-input>
+                </div>
+            </div>
+        </div>
+
+        <div class="birthdate">
+            <label class="label"> {{'birthdate' | localize}} </label>
+            <div class="field">
+                <bgs-input type="number" width="97px" [(ngModel)]="user.birthDay"></bgs-input>
+                <bgs-input type="number" width="97px" [(ngModel)]="user.birthMonth"></bgs-input>
+                <bgs-input type="number" width="97px"[(ngModel)]="user.birthYear"></bgs-input>
+            </div>
+        </div>
+
+        <div class="gender">
+            <label class="label"> {{'gender' | localize}} </label>
+            <div class="radio-input">
+                <input type="radio" [value]="1" [(ngModel)]="user.genderId">
+                <label class="label"> {{'male' | localize}} </label>
+                <input type="radio" [value]="2" [(ngModel)]="user.genderId">
+                <label class="label" > {{'female' | localize}} </label>
+            </div>
+        </div>
+
+        <div class="address">
+            <label class="label"> {{'address' | localize}} </label>
+            <div class="field">
+                <bgs-input width="305px" [(ngModel)]="user.address"></bgs-input>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-information">
+
+        <div class="telephone">
+            <label class="label"> {{'phone' | localize}} </label>
+            <div class="field">
+                <bgs-input width="305px" [(ngModel)]="user.phoneNumber"></bgs-input>
+            </div>
+        </div>
+
+        <div class="email">
+            <label class="label"> {{'email' | localize}} </label>
+            <div class="field">
+                <bgs-input width="305px" [(ngModel)]="user.email"></bgs-input>
+            </div>
+        </div>
+
+        <div class="btn-wrapper">
+            <bgs-button width="100%" label="{{'update_profile' | localize}}" (click)="updateClick()"> </bgs-button>
+        </div>
+
+    </div>
+
+
+</div>

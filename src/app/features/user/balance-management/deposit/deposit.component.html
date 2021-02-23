@@ -1,0 +1,26 @@
+<div class="deposit-wrapper">
+<app-balance-management></app-balance-management>
+
+<div class="profile-content">
+    <div class="title"> {{'payment_methods' | localize}} </div>
+    <div class="payment-method">
+        <div class="img-wrapper">
+            <img
+                src="https://cdn.betlive.com/AAEAAQAAAAAAAAAQAAAAJGY1ZjM1YzMwLTBkYTgtNGJhYi1hNmUyLWY4ZjljMzE1OTY1OQ">
+        </div>
+        <div class="information">
+            <div class="amount"> {{'amount' | localize}} 1-10000</div>
+            <div class="fee"> {{'fee' | localize }} 0% </div>
+        </div>
+
+
+        <div class="deposit">
+            <bgs-input type="number" placeholder="{{'amount' | localize}}" width="100%" [(ngModel)]="amount" ></bgs-input>
+            <bgs-button label="{{'deposit' | localize}}" width="185px" (click)="addBalance()" ></bgs-button>
+
+        </div>
+
+
+    </div>
+</div>
+</div>

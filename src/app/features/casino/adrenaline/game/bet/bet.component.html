@@ -1,0 +1,120 @@
+<div class="content-wrapper">
+
+    <div class="top-side">
+
+        <div class="icons">
+            <i class="pi pi-check"></i>
+            <i class="pi pi-times"></i>
+            <i class="pi pi-times"></i>
+        </div>
+
+        <div class="balance">
+            <span> {{'balance' | localize}} </span>
+            <span class="green"> {{balance | number : '1.2-2' | currency: 'GEL': 'symbol-narrow'}} </span>
+        </div>
+    </div>
+
+    <div class="bottom">
+
+        <div class="bet">
+
+            <div class="auto-cashout">
+
+                <div class="label">
+                    <span>auto cashout</span>
+                    <input type="radio">
+                </div>
+
+                <div class="input">
+                    <label>bps</label>
+                    <input [(ngModel)]="bps" />
+                </div>
+            </div>
+
+            <div class="my-bet">
+                <span class="label">My bet</span>
+                <div class="input">
+                    <label>Gel</label>
+                    <input [(ngModel)]="gel">
+                </div>
+            </div>
+
+            <div class="bet-wrapper">
+
+                <div class="bet-sizes">
+
+                    <div class="first-row">
+                        <div (click)="clickFive()" >5</div>
+                        <div (click)="clickTen()" >10</div>
+                    </div>
+
+                    <div class="second-row">
+                        <div (click)="clickTwentyFive()" >25</div>
+                        <div (click)="clickTwoX()" >2X</div>
+                    </div>
+
+                    <div class="third-row">
+                        <div (click)="clickAllIn()" >All in</div>
+                    </div>
+
+                </div>
+
+                <div class="bet-btn">
+                    <div (click)="clickBet()" >Bet</div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="bet">
+            <div class="auto-cashout">
+
+                <div class="label">
+                    <span>auto cashout</span>
+                    <input type="radio">
+                </div>
+
+                <div class="input">
+                    <bgs-input></bgs-input>
+                </div>
+            </div>
+
+            <div class="my-bet">
+                <span class="label">My bet</span>
+                <div class="input">
+                    <bgs-input></bgs-input>
+                </div>
+            </div>
+
+            <div class="bet-wrapper">
+
+                <div class="bet-sizes">
+
+                    <div class="first-row">
+                        <div>5</div>
+                        <div>10</div>
+                    </div>
+
+                    <div class="second-row">
+                        <div>25</div>
+                        <div>2X</div>
+                    </div>
+
+                    <div class="third-row">
+                        <div>All in</div>
+                    </div>
+
+                </div>
+
+                <div class="bet-btn">
+                    <div>Bet</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

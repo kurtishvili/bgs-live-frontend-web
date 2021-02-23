@@ -1,0 +1,28 @@
+.container {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    z-index: 1000;
+
+    .toast-container {
+        width: 300px;
+        background-color: #1e2f54;
+        border-radius: 10px;
+        height: 70px;
+        position: relative;
+        right: 0;
+        color: white;
+        padding: 10px 15px;
+
+        .toast-severity {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        .toast-message {
+            margin: 15px auto;
+            margin-bottom: 20px;
+            width: 300px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.information-wrapper {
+    padding: 20px 30px;
+    display: flex;
+
+    .balance,
+    .general-information,
+    .personal-information,
+    .contact {
+        flex: 1;
+        color: white;
+        font-size: 18px;
+        font-weight: bolder;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                color: #c0cacf;
+            }
+        }
+    }
+}

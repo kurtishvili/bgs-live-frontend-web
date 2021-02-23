@@ -1,0 +1,18 @@
+<div class="match-container">
+
+    <div class="match" *ngFor="let match of matches">
+        <div class="match-name">{{match.name}} </div>
+        <div class="coefficients">
+            <div class="coefficient" (click)="firstTeamWin(match)" [class.selected]="match.firstTeamWinSelected"  >
+                <span> {{match.firstTeamWinCoefficient}} </span>
+            </div>
+            <div class="coefficient" (click)="equal(match)"  [class.selected]="match.equalSelected" >
+                <span> {{match.equalCoefficient}} </span>
+            </div>
+            <div class="coefficient" (click)="secondTeamWin(match)" [class.selected]="match.secondTeamWinSelected" >
+                <span> {{match.secondTeamWinCoefficient}} </span>
+            </div>
+
+        </div>
+    </div>
+</div>

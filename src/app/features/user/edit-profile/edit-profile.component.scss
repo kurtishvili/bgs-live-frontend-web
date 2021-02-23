@@ -1,0 +1,67 @@
+.title {
+    padding: 20px;
+    .edit-profile {
+        padding: 30px;
+        margin-top: 20px;
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+
+    .personal-information {
+        flex: 1;
+
+        .name {
+            display: flex;
+            .field {
+                margin: 10px 5px 10px 0px;
+            }
+        }
+        .birthdate {
+            margin-top: 20px;
+            .field {
+                display: flex;
+
+                bgs-input {
+                    margin: 10px 5px 10px 0px;
+                }
+            }
+        }
+        .gender,
+        .address {
+            margin-top: 20px;
+
+            .radio-input {
+                margin-top: 15px;
+            }
+            .field {
+                margin-top: 10px;
+            }
+        }
+    }
+    .contact-information {
+        flex: 1;
+        .field {
+            margin-top: 10px;
+        }
+        .email {
+            margin-top: 20px;
+            .field {
+                margin-top: 10px;
+            }
+        }
+        .btn-wrapper{
+            margin-top: 40px;
+            width: 310px;
+        }
+    }
+}
+
+.label {
+    color: white;
+}

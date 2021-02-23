@@ -1,0 +1,12 @@
+.arrow-wrapper {
+    width: 60px;
+    height: 60px;
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}

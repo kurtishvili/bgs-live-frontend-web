@@ -1,0 +1,12 @@
+<div class="language-container">
+    <div class="current-language" (click)="showLanguageClick()" contentEditable="true" (blur)="showLanguage = false" >
+        <img editable class="flag" [src]="currentLanguageUrl" alt="img">
+
+        <div class="language-picker" *ngIf="showLanguage">
+            <div class="picker-item" *ngFor="let lang of languages" (click)="selectLanguage(lang)">
+                <span> {{lang.name}} </span>
+                <img class="flag" [src]="'/assets/icons/flag-' + lang.tag + '.png'">
+            </div>
+        </div>
+    </div>
+</div>

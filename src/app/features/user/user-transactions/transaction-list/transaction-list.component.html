@@ -1,0 +1,27 @@
+<div class="list-wrapper">
+
+    <div class="title-wrapper">
+        <div class="status title"> {{'status' | localize}} </div>
+        <div class="amount title"> {{'amount' | localize}} </div>
+        <div class="operation title"> {{'operation_type' | localize}} </div>
+        <div class="date title"> {{'date' | localize}} </div>
+        <div class="fee title"> {{'fee' | localize}} </div>
+    </div>
+
+    <div class="transactions" *ngFor="let transaction of transactions">
+        <div class="status column">
+            <div class="status-icon">
+                <span class="material-icons"  >
+                    {{getTransactionStatusIcon(transaction.statusId)}}
+                </span>
+            </div>
+        </div>
+        <div class="amount column"> {{transaction.amount | number : '1.2-2' | currency: 'GEL': 'symbol-narrow'}} </div>
+        <div class="operation column"> {{getTransactionType(transaction.typeId) | localize }} </div>
+        <div class="date column"> {{transaction.createDate | date: 'dd/MM/yyyy HH:mm'}} </div>
+        <div class="fee column"> {{transaction.fee | number : '1.2-2' | currency: 'GEL': 'symbol-narrow'}} </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,52 @@
+<div class="transaction-container">
+
+    <div class="filter-container">
+        <div class="title-wrapper">
+            <div> {{'period' | localize}} </div>
+            <div> {{'amount' | localize}} </div>
+        </div>
+
+        <div class="inputs">
+            <div class="input-field">
+                <bgs-input type="date" placeholder="{{'from' | localize}} " [(ngModel)]="filter.dateFrom"></bgs-input>
+            </div>
+            <div class="input-field">
+                <bgs-input type="date" placeholder="{{'to' | localize}} " [(ngModel)]="filter.dateTo"></bgs-input>
+            </div>
+            <div class="input-field">
+                <bgs-input placeholder="{{'from' | localize}} " [(ngModel)]="filter.amountFrom"> </bgs-input>
+            </div>
+            <div class="input-field">
+                <bgs-input placeholder="{{'to' | localize}} " [(ngModel)]="filter.amountTo"></bgs-input>
+            </div>
+        </div>
+
+        <div class="checkbox-inputs-wrapper">
+            
+            <div class="checkbox-input">
+                <input type="radio" [value]="1" [(ngModel)]="filter.typeId" >
+                <label> {{'deposit' | localize}}  </label>
+            </div>
+
+            <div class="checkbox-input">
+                <input type="radio" [value]="2" [(ngModel)]="filter.typeId" >
+                <label> {{'withdrow' | localize}} </label>
+            </div>
+
+            <div class="checkbox-input">
+                <input type="radio" [value]="3"  [(ngModel)]="filter.typeId">
+                <label> {{'bet' | localize}} </label>
+            </div>
+            <div class="checkbox-input">
+                <input type="radio"  [value]="4"  [(ngModel)]="filter.typeId">
+                <label> {{'win' | localize}} </label>
+            </div>
+
+            <div class="btn-wrapper">
+                <bgs-button label=" {{'filter' | localize}} " (click)="filterClick()"> </bgs-button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

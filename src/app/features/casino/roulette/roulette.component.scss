@@ -1,0 +1,95 @@
+.roulette-wrapper {
+    .wheel-wrapper {
+        overflow: hidden;
+        position: relative;
+
+        .arrow {
+            border-left: 7px solid black;
+            border-bottom: 7px solid black;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            transform: rotate(-45deg) translateX(-50%);
+            z-index: 1000;
+        }
+
+        .roulette-wheel {
+            width: 407px;
+            height: 407px;
+            background-image: url(https://dashvideocasino.com/static/images/wheel.png);
+            margin: auto;
+
+            &.rotate {
+                animation: rotation 0.1s infinite linear;
+            }
+        }
+    }
+
+    .main-board-wrapper {
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 160px;
+        pointer-events: none;
+
+        .main-board {
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
+            width: 386px;
+            transform: translate(-50%, 100%);
+            transition: transform 0.3s;
+            pointer-events: all;
+
+            &.visible {
+                transform: translate(-50%, -10px);
+            }
+
+            .row {
+                border-top: 2px solid #ffc107;
+                border-left: 2px solid #ffc107;
+                border-right: 2px solid #ffc107;
+
+                &:last-child {
+                    border-bottom: 2px solid #ffc107;
+                }
+
+                .slot {
+                    width: 30px;
+                    line-height: 45px;
+                    display: inline-block;
+                    cursor: pointer;
+                    text-align: center;
+
+                    &:not(:last-child) {
+                        border-right: 2px solid #ffc107;
+                    }
+
+                    &:hover {
+                        background-color: #f19b9b !important;
+                    }
+
+                    .text {
+                        color: #fff;
+                        font-size: 24px;
+                        transform: rotate(-90deg);
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,25 @@
+.content-wrapper {
+    overflow: auto;
+    .title {
+        display: flex;
+
+        div{
+            flex: 1;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            border-bottom: 2px solid yellow;
+            font-size: 14px;
+            overflow: auto;
+        }
+    }
+}
+
+th, tr {
+    font-size: 10px;
+}
+th{
+    position: sticky;
+      top: 0px;
+      z-index: 9999;
+}

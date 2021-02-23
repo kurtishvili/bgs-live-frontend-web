@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 654px;
+    .profile-menu {
+        width: 200px;
+        min-width: 200px;
+        background-color: #363941;
+        vertical-align: top;
+        user-select: none;
+        color: white;
+
+        .title {
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align-last: center;
+        }
+
+        .field {
+            text-align-last: center;
+            cursor: pointer;
+            margin-top: 5px;
+            border-bottom: 1px solid grey;
+
+            &:hover, &.active {
+                background-color: grey;
+            }
+        }
+    }
+}

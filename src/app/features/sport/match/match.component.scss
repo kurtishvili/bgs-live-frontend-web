@@ -1,0 +1,36 @@
+.match-container {
+    padding: 20px;
+
+    .match {
+        flex: 1;
+        background-color: white;
+        margin-top: 5px;
+
+        .match-name {
+            display: inline-block;
+            width: 120px;
+        }
+        .coefficients {
+            display: inline-block;
+            margin-left: 30px;
+
+            .coefficient {
+                display: inline-block;
+                margin-right: 10px;
+                padding: 8px;
+                cursor: pointer;
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                    background-color: green;
+                }
+
+                &.selected {
+                    background-color: green;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

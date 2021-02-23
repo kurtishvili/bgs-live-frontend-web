@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    height: 85px;
+    padding: 0 5px;
+    background-color: #3e424b;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        color: #337ab7;
+        text-decoration: none;
+
+        .logo {
+            width: 125px !important;
+        }
+    }
+
+    .main-menu {
+        .menu {
+            font-family: Poppins, BPG Arial Caps, sans-serif;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            white-space: nowrap;
+            font-size: 14px;
+
+            li {
+                display: inline-block;
+
+                :hover {
+                    transform: scale(1.05);
+                }
+                a {
+                    color: #fff;
+                    display: block;
+                    text-decoration: none;
+                    padding: 0 9px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    .right-menu {
+        display: flex;
+        align-items: center;
+
+        .auth-form {
+            display: flex;
+            align-items: center;
+
+            .input-wrapper {
+                margin-left: 10px;
+            }
+            .sign-btn {
+                background-color: red;
+                margin-left: 10px;
+            }
+        }
+
+        .sign-in-right-menu-wrapper {
+            display: flex;
+            .pin-name-wrapper {
+                display: flex;
+
+                .pin,
+                .name {
+                    color: darkgrey;
+                    margin-left: 10px;
+                }
+            }
+           
+        }
+    }
+    .register-btn {
+        background: #80808054;
+    }
+    .language-wrapper {
+        margin-left: 5px;
+        cursor: pointer;
+        height: 25px;
+    }
+
+    .sign-btn,
+    .register-btn {
+        margin-left: 5px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 2px;
+        border: none;
+        padding: 4px 7px;
+        color: white;
+    }
+}

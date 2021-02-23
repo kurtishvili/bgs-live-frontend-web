@@ -1,0 +1,47 @@
+.language-container {
+    position: relative;
+    height: 100%;
+
+    .current-language {
+        cursor: pointer;
+        outline: none;
+        caret-color: transparent;
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+
+        .language-picker {
+            position: absolute;
+            bottom: 3px;
+            right: 0;
+            transform: translateY(100%);
+            width: 108px;
+            background-color: #3e424b;
+            padding: 5px 0;
+            text-align: right;
+            box-shadow: -1px 1px 4px 1px #171817;
+            z-index: 1000;
+
+            .picker-item {
+                cursor: pointer;
+                font-size: 11px;
+
+                &:not(:last-child) {
+                    margin-bottom: 9px;
+                }
+
+                &:hover {
+                    background-color: #e2e2e2;
+                }
+
+                img {
+                    width: 40px;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

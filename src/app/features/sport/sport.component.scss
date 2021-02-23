@@ -1,0 +1,11 @@
+.sport-container {
+    display: flex;
+
+    .match{
+        flex: 1;
+    }
+    .ticket {
+        width: 300px;
+    }
+}
+

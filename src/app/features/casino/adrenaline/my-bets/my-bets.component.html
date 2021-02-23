@@ -1,0 +1,30 @@
+<div class="content-wrapper">
+
+    <div class="title">
+        <div>My bets</div>
+        <div>Game</div>
+    </div>
+
+    <div class="my-bets">
+        <p-table [value]="bets">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>ID</th>
+                    <th>bps</th>
+                    <th>bet</th>
+                    <th>win</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-bet>
+                <tr>
+                    <td >{{bet.id}}</td>
+                    <td>{{bet.bps}}</td>
+                    <td>{{bet.bet}}</td>
+                    <td>{{bet.win}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+
+    
+</div>

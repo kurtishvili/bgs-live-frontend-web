@@ -1,0 +1,7 @@
+<app-transaction-filter (onFilter)="onFilter($event)"></app-transaction-filter>
+
+<app-transaction-list [transactions]="transactions"></app-transaction-list>
+
+<div class="paginator-wrapper">
+    <app-bgs-paginator (onPaginate)="onPaginate($event)" [totalRecords]="transactionsCount"></app-bgs-paginator>
+</div>

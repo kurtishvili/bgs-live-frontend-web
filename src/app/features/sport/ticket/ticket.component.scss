@@ -1,0 +1,88 @@
+.ticket-container {
+    margin: 25px 0px;
+    height: 300px;
+    overflow: auto;
+    .ticket {
+        .bet-information {
+            border: 1px solid black;
+            display: inline-block;
+            width: 180px;
+
+            .match-name,
+            label {
+                margin: 5px 10px;
+                color: grey;
+                font-family: bold;
+            }
+
+            .result {
+                label {
+                }
+
+                .coefficient {
+                    float: right;
+                    color: grey;
+                }
+            }
+        }
+        .close {
+            font-size: 30px;
+            color: white;
+            margin: 15px;
+            float: right;
+            cursor: pointer;
+        }
+    }
+    .amount-information {
+        margin-top: 10px;
+        width: 240px;
+
+        .amount {
+            color: white;
+            font-size: 13px;
+
+            input {
+                margin-left: 30px;
+                width: 90px;
+                height: 28px;
+                outline: none;
+            }
+        }
+
+        .total {
+            margin-top: 10px;
+            .coefficient,
+            .win {
+                color: white;
+                font-size: 13px;
+            }
+
+            .total-coefficient,
+            .total-win {
+                color: yellow;
+            }
+        }
+
+        .bet {
+            margin-top: 10px;
+            div {
+                background-color: grey;
+                font-size: 20px;
+                padding: 5px 7px;
+                display: inline-block;
+                cursor: pointer;
+                vertical-align: middle;
+                color: white;
+            }
+            .bet-btn {
+                display: inline-block;
+                background-color: green;
+                margin-left: 25px;
+                cursor: pointer;
+                width: 115px;
+                padding: 5px;
+                vertical-align: middle;
+            }
+        }
+    }
+}

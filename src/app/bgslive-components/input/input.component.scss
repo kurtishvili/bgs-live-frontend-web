@@ -1,0 +1,11 @@
+.input {
+    background-color: #80808054;
+    outline: none;
+    border: none;
+    display: block;
+    color: white;
+
+    &.disabled {
+        opacity: 0.5;
+    }
+}

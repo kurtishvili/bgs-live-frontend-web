@@ -1,0 +1,39 @@
+<div class="ticket-container">
+
+    <div class="ticket" *ngFor="let match of matches">
+        <div class="bet-information">
+            <div class="match-name"> {{match.name}} </div>
+            <label>result</label>
+            <div class="result">
+                <label> {{match.result}} </label>
+                <div class="coefficient"> {{match.coefficient}} </div>
+            </div>
+        </div>
+        <div class="close" (click)="deleteMatch(match)" > X </div>
+    </div>
+
+    <div class="amount-information" *ngIf="matches?.length" >
+
+        <div class="amount">
+            <span>თანხა</span>
+            <input type="number" [(ngModel)]="amount" >
+        </div>
+
+        <div class="total">
+            <span class="coefficient">კოეფიციენტი</span>
+            <span class="total-coefficient"> {{totalCoeficient | number:'1.2-2'}} </span>
+            <span class="win">სავ. მოგება</span>
+            <span class="total-win"> {{totalWin | number:'1.2-2'}} </span>
+        </div>
+
+        <div class="bet">
+            <div (click)="deleteAll()" >X</div>
+            <button class="bet-btn">დადება</button>
+        </div>
+
+    </div>
+
+
+
+
+</div>

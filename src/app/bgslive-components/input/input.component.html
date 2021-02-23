@@ -1,0 +1,3 @@
+<input class="input" [type]="inputType" [(ngModel)]="value" (input)="onInput($event.target.value)" (focus)="onFocus()"
+    (blur)="onBlur()" [placeholder]="placeholder" [style.width]="width" [style.height]="height" [maxLength]="maxLength"
+    [disabled]="isDisabled" [class.disabled]="isDisabled" [required]="isRequired">

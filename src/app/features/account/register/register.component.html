@@ -1,0 +1,78 @@
+<div class="register-container">
+
+    <span class="header"> {{'Create new account' | localize}} </span>
+
+    <form #registerForm="ngForm">
+
+        <div class="field">
+            <bgs-input type="text" name="firstname" placeholder="{{'firstname' | localize}}" width="100%"
+                [(ngModel)]="user.firstname" required>
+            </bgs-input>
+        </div>
+
+        <div class="field">
+            <bgs-input type="text" name="lastname" placeholder="{{'lastname' | localize}}" width="100%"
+                [(ngModel)]="user.lastname" required>
+            </bgs-input>
+        </div>
+
+        <div class="field">
+            <bgs-input name="id" placeholder="{{'id' | localize}}" width="100%" maxLength="11"
+                [(ngModel)]="user.personalNumber" required>
+            </bgs-input>
+        </div>
+
+        <div class="input-radio">
+            <p class="gender">{{"gender" | localize}}</p>
+            <input type="radio" id="male" name="gender" [value]="1" [(ngModel)]="user.genderId" required>
+            <label for="male"> {{"male" | localize}} </label>
+            <input type="radio" id="female" name="gender" [value]="2" [(ngModel)]="user.genderId" required>
+            <label for="female"> {{"female" | localize}} </label>
+        </div>
+
+        <div class="birthdate">
+            <p>{{"birthdate" | localize}}</p>
+            <bgs-input name="birthDay" placeholder="{{'day' | localize}}" width="70px" maxLength="2"
+                [(ngModel)]="user.birthDay" required> </bgs-input>
+            <bgs-input name="birthMonth" placeholder="{{'month' | localize}}" width="70px" maxLength="2"
+                [(ngModel)]="user.birthMonth" required> </bgs-input>
+            <bgs-input name="birthYear" placeholder="{{'year' | localize}}" width="70px" maxLength="4"
+                [(ngModel)]="user.birthYear" required> </bgs-input>
+        </div>
+
+        <div class="field">
+            <bgs-input name="address" placeholder="{{'address' | localize}}" width="100%" [(ngModel)]="user.address">
+            </bgs-input>
+        </div>
+
+        <div class="field">
+            <bgs-input type="email" name="email" placeholder="{{'email' | localize}}" width="100%"
+                [(ngModel)]="user.email">
+            </bgs-input>
+        </div>
+
+        <div class="field">
+            <bgs-input name="username" placeholder="{{'username' | localize}}" width="100%" [(ngModel)]="user.username"
+                required>
+            </bgs-input>
+        </div>
+
+        <div class="field">
+            <bgs-input type="password" name="password" placeholder="{{'password' | localize}}" width="100%"
+                [(ngModel)]="user.password">
+            </bgs-input>
+        </div>
+
+        <div class="field">
+            <bgs-input type="password" name="repeatPassword" placeholder="{{'repeatPassword' | localize}}" width="100%"
+                [(ngModel)]="user.repeatPassword" required> </bgs-input>
+        </div>
+
+        <div class="btn-wrapper">
+            <bgs-button width="100%" label="{{'register' | localize}}" (click)="registerClick()"
+                [isDisabled]="registerForm.invalid"> </bgs-button>
+        </div>
+
+    </form>
+
+</div>

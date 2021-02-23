@@ -1,0 +1,9 @@
+<ng-container *ngIf="visibility"  >
+    <div class="background"></div>
+    <div class="dialog-container" [style.width]="width" [style.background-color]="backgroundColor">
+        <button class="close-btn" (click)="closeClick()"> X </button>
+        <div class="content-wrapper">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</ng-container>

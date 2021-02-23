@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+
+    .logo-wrapper {
+        width: 130px;
+        padding: 10px;
+        cursor: pointer;
+        object-fit: cover;
+        outline: none;
+        height: 43px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        span {
+            color: white;
+            text-align: center;
+        }
+    }
+}

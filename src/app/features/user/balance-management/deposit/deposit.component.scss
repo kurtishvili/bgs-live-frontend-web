@@ -1,0 +1,25 @@
+.deposit-wrapper{
+    display: flex;
+
+    .profile-content {
+        flex: 1;
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        .payment-method {
+            margin-top: 20px;
+            background-color: #363941;
+            display: flex;
+            justify-content: space-between;
+
+            .information {
+                font-size: 16px;
+                margin-top: 40px;
+            }
+            .deposit {
+                padding: 35px;
+            }
+        }
+    }
+}
